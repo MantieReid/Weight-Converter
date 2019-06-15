@@ -4,3 +4,20 @@ body{
   color:#fff;  /*  background color */
 }
 
+/*.card-primary {
+
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+}
+*/
+
+/*  background color *@keyframes example {
+  0%   {background-color:red; border-color:  red;}
+  25%  {background-color:brown; border-color: brown; }
+  50%  {background-color:blue; border-color: blue; }
+  75%  {background-color:green;  border-color: green;}
+  100% {background-color:red; border-color: red;}
+}
+*/ 
