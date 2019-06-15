@@ -15,7 +15,7 @@
 
 <body>
 
-  <div class="container">  <!--- Contianer for the  weight convereter-->
+  <div class="container">  <!--- Container for the  weight converter-->
   <div class="row">
     <div class="col-md-6 offset-md-3">  <!--- using bootstrap here for the weight converter-->
       <h1 class="display-4 text-center mb-3">Weight Converter</h1>    <!--- The title of program-->
@@ -26,11 +26,12 @@
         </div>
 
       </form>
-      <h1 id="notice"> All results are rounded off and truncated</h1>
+      <p id="notice"> All results are rounded off and truncated(except for metric ton)</p>
+
       <div id="output">   <!--- Division for the output.   --->
         <div class="card card-primary mb-2">   <!--- Defines the kind of card to be used.   --->
           <div class="card-block">
-            <h4>Grams:</h4>
+            <h4>Grams:</h4> 
             <div id="gramsOutput"></div>
           </div>
         </div>
@@ -52,11 +53,18 @@
               <div class="card card-primary mb-2">   <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Milligrams:</h4>
-            <div id="miligramsOutput"></div>
+            <div id="milligramsOutput"></div>
           </div>
         </div>
         
             
+        
+        <div class="card card-primary mb-2">   <!--- Defines the kind of card to be used.  --->
+          <div class="card-block">
+            <h4>Metric Ton:</h4>
+            <div id="MetricTonsOutput"></div>
+          </div>
+        </div>
         
       
       </div>
