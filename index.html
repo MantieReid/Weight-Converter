@@ -15,69 +15,77 @@
 
 <body>
 
-  <div class="container">  <!--- Container for the  weight converter-->
+  <div class="container-fluid">  <!--- Container for the  weight converter-->
   <div class="row">
-    <div class="col-md-6 offset-md-3">  <!--- using bootstrap here for the weight converter-->
+    <div class="col">  <!--- using bootstrap here for the weight converter-->
       <h1 class="display-4 text-center mb-3">Weight Converter</h1>    <!--- The title of program-->
 
-      <form>   <!--- Start of the form-->
+      <form name="weight Converter">    
         <div class="form-group">   <!--- Define div class for the form--->
           <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">   <!--- input for the form. Large form.  --->
         </div>
 
       </form>
       <p id="notice"> All results are rounded off and truncated(except for metric ton, Imperial Ton, US Ton and Stone).</p>
-
+    </div>
+    </div>
       <div id="output">   <!--- Division for the output.   --->
-       
-        <div class="card card-primary mb-2">  <!--- Grams --> <!--- Defines the kind of card to be used.   --->
+        
+        <div class="row">  <!--- row for output  --->
+
+        <div class="col-sm card card-primary mb-2" style="margin-right: 1%;">  <!--- Grams --> <!--- Defines the kind of card to be used.   --->
           <div class="card-block">
             <h4>Grams:</h4> 
             <div id="gramsOutput"></div>
           </div>
         </div>
 
-        <div class="card card-primary mb-2">    <!--- Kilograms -->  <!--- Defines the kind of card to be used.  --->
+        <div class="col-sm card card-primary mb-2" style="margin-right: 1%;">    <!--- Kilograms -->  <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Kilograms:</h4>
             <div id="kgOutput"></div>
           </div>
         </div>
 
-        <div class="card card-primary mb-2">     <!--- ounces --> <!--- Defines the kind of card to be used.  --->
+        <div class="col-sm card card-primary mb-2" style="margin-right: 1%;" >     <!--- ounces --> <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Ounces:</h4>
             <div id="ozOutput"></div>
               </div>
             </div>
           
-              <div class="card card-primary mb-2">    <!--- Milligrams -->  <!--- Defines the kind of card to be used.  --->
+              <div class="col-sm card card-primary mb-2" style="margin-right: 1%;" >    <!--- Milligrams -->  <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Milligrams:</h4>
             <div id="milligramsOutput"></div>
           </div>
         </div>
         
-            
         
-        <div class="card card-primary mb-2">    <!--- Metric Ton -->  <!--- Defines the kind of card to be used.  --->
+     
+        <div class="col-sm card card-primary mb-2"style="margin-right: 1%;" >    <!--- Metric Ton -->  <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Metric Ton:</h4>
             <div id="MetricTonsOutput"></div>
           </div>
         </div>
         
-        <div class="card card-primary mb-2">   <!--- Microgram --> <!--- Defines the kind of card to be used.  --->
+      </div>         <!--- End of row-->
+
+        <div class ="row">
+
+        <div class="col-sm card card-primary mb-2" style="margin-right: 1%;" >   <!--- Microgram --> <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Microgram:</h4>
             <div id="microgramoutput"></div>
           </div>
         </div>
 
+            
 
-       
+
       
-        <div class="card card-primary mb-2">    <!--- Imperial Ton -->  <!--- Defines the kind of card to be used.  --->
+        <div class="col-sm card card-primary mb-2" style="margin-right: 1%;">    <!--- Imperial Ton -->  <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Imperial Ton:</h4>
             <div id="imperailtonoutput"></div>
@@ -86,14 +94,14 @@
 
 
 
-        <div class="card card-primary mb-2">    <!--- US Ton -->  <!--- Defines the kind of card to be used.  --->
+        <div class="col-sm card card-primary mb-2" style="margin-right: 1%;">    <!--- US Ton -->  <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>US Ton:</h4>
             <div id="ustonoutput"></div>
           </div>
         </div>
 
-        <div class="card card-primary mb-2">    <!--- Stone output -->  <!--- Defines the kind of card to be used.  --->
+        <div class="col-sm card card-primary mb-2" style="margin-right: 1%;" >    <!--- Stone output -->  <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Stone:</h4>
             <div id="Stoneoutput"></div>
@@ -101,8 +109,7 @@
         </div>
 
       </div>
-    </div>
-  </div>
+   
 </div>
   
   
