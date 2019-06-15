@@ -1,6 +1,9 @@
 document.getElementById("output").style.visibility = "hidden"; //hides the output of the conversion. 
 document.getElementById("notice").style.visibility = "hidden" //hides the header that explains that results are rounded  and truncated
 
+
+
+
 document.getElementById("lbsInput").addEventListener("input", function(e) { //listener for input. Runs when input is entered. 
  
 
@@ -10,6 +13,7 @@ document.getElementById("lbsInput").addEventListener("input", function(e) { //li
  
   let lbs = e.target.value;
 
+  
 
   var gramsformula = Math.trunc(Math.round( lbs * 453.592));  //grams formula //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
 
@@ -47,8 +51,17 @@ document.getElementById("lbsInput").addEventListener("input", function(e) { //li
   document.getElementById("imperailtonoutput").innerHTML = imperialtonformula;  
 
 
+  var ustonformula = lbs / 2000; //Us Ton formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("ustonoutput").innerHTML = ustonformula;  
 
 
+
+  var stoneformula =  lbs / 14; //stone Ton formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("Stoneoutput").innerHTML = stoneformula;  
+
+
+
+  
   
 
 
