@@ -38,9 +38,20 @@ document.getElementById("lbsInput").addEventListener("input", function(e) { //li
   document.getElementById("MetricTonsOutput").innerHTML = metrictonsformula;  
 
 
+
+  var microgramformula = Math.trunc(Math.round(lbs * 4.536e+8)); //micrograms tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("microgramoutput").innerHTML = microgramformula;  
+
+  
+  var imperialtonformula = lbs / 2240; //imperial ton tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("imperailtonoutput").innerHTML = imperialtonformula;  
+
+
+
+
   
 
-  // Metric Ton2204.623
+
 
 
 });
