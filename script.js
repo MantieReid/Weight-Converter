@@ -4,14 +4,21 @@ document.getElementById("notice").style.visibility = "hidden" //hides the header
 
 
 
-document.getElementById("lbsInput").addEventListener("input", function(e) { //listener for input. Runs when input is entered. 
+
+document.getElementById("lbsInput").addEventListener("input", function(userinput) 
+
+{ 
+  //listener for input. Runs when input is entered. 
  
+  //userinput is what the user enters into the textbox/input for pounds. 
+
 
   document.getElementById("notice").style.visibility = "visible"; //makes it  visible.  header that explains that results are rounded  and truncated
   document.getElementById("output").style.visibility = "visible"; //make the output visible after input
   
  
-  let lbs = e.target.value;
+let lbs = userinput.target.value;  //lbs equals what the user enetered. 
+ // let lbs = e.target.value;
 
   
 
@@ -26,9 +33,9 @@ document.getElementById("lbsInput").addEventListener("input", function(e) { //li
  
 
 
-  var ouncesformula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  //var ouncesformula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
 
-  document.getElementById("ozOutput").innerHTML = ouncesformula;
+  //document.getElementById("ozOutput").innerHTML = ouncesformula;
 
   
   var milligramsformula =  Math.trunc(Math.round(lbs * 453592.37)); //milligrams formula  // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
@@ -54,6 +61,8 @@ document.getElementById("lbsInput").addEventListener("input", function(e) { //li
   var ustonformula = lbs / 2000; //Us Ton formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("ustonoutput").innerHTML = ustonformula;  
 
+  var ouncesformula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("ozOutput").innerHTML = ouncesformula;  
 
 
   var stoneformula =  lbs / 14; //stone Ton formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
@@ -68,3 +77,4 @@ document.getElementById("lbsInput").addEventListener("input", function(e) { //li
 
 
 });
+
