@@ -24,12 +24,11 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
 
   var gramsformula = Math.trunc(Math.round( lbs * 453.592));  //grams formula //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
 
-  document.getElementById("gramsOutput").innerHTML = gramsformula;
+  
  
- 
-  var kgformula = Math.trunc(Math.round(lbs / 2.205)); //kilogram formula  //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+ // var kgformula = Math.trunc(Math.round(lbs / 2.205)); //kilogram formula  //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
 
-  document.getElementById("kgOutput").innerHTML = kgformula;
+  //document.getElementById("kgOutput").innerHTML = kgformula;
  
 
 
@@ -77,4 +76,46 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
 
 
 });
+
+
+function convert_to_grams() //converts pounds to grams. Then it takes the result of that and puts it in the grams input textbox. 
+{
+
+  var lbs = document.getElementById("lbsInput").value; //lbs is equal to what the user entered. 
+ 
+  var gramsformula = Math.trunc(Math.round( lbs * 453.592));  //grams formula //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+
+  document.getElementById("grams_input").value = gramsformula;
+
+
+}
+
+
+
+
+function convert_to_lbs()  //converts grams to pounds.  Then it takes the result of that and puts it in the pounds input textbox. 
+{
+  
+var grams_entered_by_user = document.getElementById("grams_input").value; //sets the variable to hold the current numbers of what the user entered. 
+var grams_to_pounds = grams_entered_by_user / 453.592; //converts grams to pounds. 
+
+document.getElementById("lbsInput").value = grams_to_pounds;
+
+
+}
+
+
+function pounds_to_kilograms()  //converts pounds to kilograms. The result is put into the kilograms input textbox. 
+{
+  var lbs = document.getElementById("lbsInput").value; //lbs is equal to what the user entered. 
+
+
+  var pounds_to_kilograms = Math.trunc(Math.round(  lbs  /  2.205 )); //kilograms to  //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+
+  document.getElementById("Kilograms_input").value = pounds_to_kilograms; //puts the  result of the formula into the input box. 
+ 
+
+
+}
+
 
