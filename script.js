@@ -78,6 +78,9 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
 });
 
 
+
+
+
 function convert_to_grams() //converts pounds to grams. Then it takes the result of that and puts it in the grams input textbox. 
 {
 
@@ -105,12 +108,14 @@ document.getElementById("lbsInput").value = grams_to_pounds;
 }
 
 
+
+
 function pounds_to_kilograms()  //converts pounds to kilograms. The result is put into the kilograms input textbox. 
 {
   var lbs = document.getElementById("lbsInput").value; //lbs is equal to what the user entered. 
 
 
-  var pounds_to_kilograms = Math.trunc(Math.round(  lbs  /  2.205 )); //kilograms to  //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var pounds_to_kilograms = Math.trunc(Math.round(  lbs  /  2.205 )); //converts pounds into kilograms //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
 
   document.getElementById("Kilograms_input").value = pounds_to_kilograms; //puts the  result of the formula into the input box. 
  
@@ -119,3 +124,40 @@ function pounds_to_kilograms()  //converts pounds to kilograms. The result is pu
 }
 
 
+var  value_of_user_input = document.getElementById("lbsInput").value;
+
+
+
+
+function kilograms_to_pounds()  //KILOGRAMS to pounds. The result is put into the pounds input textbox. 
+{
+  var kilograms_entered_in_textbox_by_user = document.getElementById("Kilograms_input").value; // is equal to what the user entered in the kilogram input textbox. 
+
+
+  var kilograms_to_pounds = Math.trunc(Math.round(  kilograms_entered_in_textbox_by_user  *  2.205 )); //kilograms to pounds  //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+
+  document.getElementById("lbsInput").value = kilograms_to_pounds; //puts the  result of the formula into the input box. 
+ 
+
+
+}
+
+
+
+function pounds_to_ounces()
+{
+  
+  var lbs = document.getElementById("lbsInput").value;
+
+
+  var ouncesformula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("ozOutput").innerHTML = ouncesformula;  
+
+}
+
+
+function ounces_to_pounds()
+{
+
+
+}

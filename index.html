@@ -22,7 +22,7 @@
 
       <form name="weight Converter">    
         <div class="form-group ">   <!--- Define div class for the form--->
-          <input id="lbsInput" oninput="convert_to_grams(), pounds_to_kilograms() " type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">   <!--- input for the form. Large form.  --->
+          <input id="lbsInput" oninput="convert_to_grams();pounds_to_kilograms()"    type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">   <!--- input for the form. Large form.  --->
         </div>
 
       </form>
@@ -40,7 +40,7 @@
           <div class="card-block">
             <h4>Grams:</h4> 
             
-            <P>  <input  id="grams_input" oninput="convert_to_lbs()" type="number" class="form-control form-control-sm" placeholder="Enter Grams..."> </P>
+            <P>  <input  id="grams_input" oninput="convert_to_lbs();pounds_to_kilograms()"   type="number" class="form-control form-control-sm" placeholder="Enter Grams..."> </P>
 
             
             <div id="gramsOutput"></div>
@@ -56,7 +56,7 @@
           <div class="card-block">
             <h4>Kilograms:</h4>
 
-            <P>  <input  id="Kilograms_input" type="number" class="form-control form-control-sm" placeholder="Enter Grams..."> </P>
+            <P>  <input  id="Kilograms_input"  oninput="convert_to_grams(); kilograms_to_pounds();" type="number" class="form-control form-control-sm" placeholder="Enter Grams..."> </P>
 
 
             <div id="kgOutput"></div>
@@ -69,6 +69,8 @@
         <div class="col- card card-primary mb-2" style="margin-right: 1%;" >     <!--- ounces --> <!--- Defines the kind of card to be used.  --->
           <div class="card-block">
             <h4>Ounces:</h4>
+            <P>  <input  id="ounces_input"  oninput="convert_to_grams();pounds_to_kilograms();" type="number" class="form-control form-control-sm" placeholder="Enter Grams..."> </P>
+
             <div id="ozOutput"></div>
               </div>
             </div>
