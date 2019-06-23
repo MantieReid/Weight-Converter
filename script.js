@@ -60,8 +60,8 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
   var ustonformula = lbs / 2000; //Us Ton formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("ustonoutput").innerHTML = ustonformula;  
 
-  var ouncesformula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
-  document.getElementById("ozOutput").innerHTML = ouncesformula;  
+ // var ouncesformula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+ // document.getElementById("ozOutput").innerHTML = ouncesformula;  
 
 
   var stoneformula =  lbs / 14; //stone Ton formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
@@ -150,14 +150,20 @@ function pounds_to_ounces()
   var lbs = document.getElementById("lbsInput").value;
 
 
-  var ouncesformula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
-  document.getElementById("ozOutput").innerHTML = ouncesformula;  
+  var pounds_to_ounces_formula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("ounces_input").value = pounds_to_ounces_formula;  
 
 }
 
 
 function ounces_to_pounds()
 {
+  var ounces_user_entered = document.getElementById("ounces_input").value;
+
+
+  var ounces_to_pounds_formula = Math.trunc(Math.round(ounces_user_entered / 16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("lbsInput").value = ounces_to_pounds_formula;  
+
 
 
 }
