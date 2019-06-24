@@ -37,10 +37,10 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
   //document.getElementById("ozOutput").innerHTML = ouncesformula;
 
   
-  var milligramsformula =  Math.trunc(Math.round(lbs * 453592.37)); //milligrams formula  // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  //var milligramsformula =  Math.trunc(Math.round(lbs * 453592.37)); //milligrams formula  // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
 
 
-  document.getElementById("milligramsOutput").innerHTML = milligramsformula; 
+  //document.getElementById("milligramsOutput").innerHTML = milligramsformula; 
 
  
  
@@ -165,5 +165,29 @@ function ounces_to_pounds()
   document.getElementById("lbsInput").value = ounces_to_pounds_formula;  
 
 //test
+
+}
+
+
+function pounds_to_Milligrams()
+{
+  
+  var lbs = document.getElementById("lbsInput").value;
+
+
+  var pounds_to_milligrams_formula = Math.trunc(Math.round(lbs *453592.37));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("milligrams_input").value = pounds_to_milligrams_formula;  
+
+}
+
+
+function Milligrams_to_pounds()
+{
+  
+  var milligrams_entered_by_user = document.getElementById("milligrams_input").value;
+
+
+  var pounds_to_milligrams_formula = Math.trunc(Math.round(milligrams_entered_by_user /  453592.37));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("lbsInput").value = pounds_to_milligrams_formula;  
 
 }
