@@ -44,8 +44,8 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
 
  
  
-  var metrictonsformula = lbs / 2204.623; //metric tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
-  document.getElementById("MetricTonsOutput").innerHTML = metrictonsformula;  
+ // var metrictonsformula = lbs / 2204.623; //metric tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  //document.getElementById("MetricTonsOutput").innerHTML = metrictonsformula;  
 
 
 
@@ -189,5 +189,31 @@ function Milligrams_to_pounds()
 
   var pounds_to_milligrams_formula = Math.trunc(Math.round(milligrams_entered_by_user /  453592.37));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("lbsInput").value = pounds_to_milligrams_formula;  
+
+}
+
+
+//metric_tons_input
+
+function pounds_to_Metric_tons()
+{
+  
+  var lbs = document.getElementById("lbsInput").value;
+
+
+  var Pounds_to_Metric_tons_formula = Math.trunc(Math.round(lbs / 2204.623));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("metric_tons_input").value = Pounds_to_Metric_tons_formula;  
+
+}
+
+
+function Metric_tons_to_pounds()
+{
+  
+  var Metric_tons_entered_by_user = document.getElementById("metric_tons_input").value;
+
+
+  var Metric_tons_to_pounds_formula = Math.trunc(Math.round(Metric_tons_entered_by_user * 2204.623));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("lbsInput").value =  Metric_tons_to_pounds_formula;  
 
 }
