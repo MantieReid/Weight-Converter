@@ -49,12 +49,12 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
 
 
 
-  var microgramformula = Math.trunc(Math.round(lbs * 4.536e+8)); //micrograms tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
-  document.getElementById("microgramoutput").innerHTML = microgramformula;  
+  //var microgramformula = Math.trunc(Math.round(lbs * 4.536e+8)); //micrograms tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  //document.getElementById("microgramoutput").innerHTML = microgramformula;  
 
   
-  var imperialtonformula = lbs / 2240; //imperial ton tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
-  document.getElementById("imperailtonoutput").innerHTML = imperialtonformula;  
+ // var imperialtonformula = lbs / 2240; //imperial ton tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  //document.getElementById("imperailtonoutput").innerHTML = imperialtonformula;  
 
 
   var ustonformula = lbs / 2000; //Us Ton formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
@@ -217,3 +217,40 @@ function Metric_tons_to_pounds()
   document.getElementById("lbsInput").value =  Metric_tons_to_pounds_formula;  
 
 }
+
+
+function pounds_to_Micrograms()
+{
+  
+  var lbs = document.getElementById("lbsInput").value;
+
+
+  var Pounds_to_micrograms_formula = Math.trunc(Math.round(lbs *  4.536e+8));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("micrograms_input").value = Pounds_to_micrograms_formula;  
+
+}
+
+function Micrograms_to_pounds()
+{
+  
+  var micrograms_entered_by_user = document.getElementById("micrograms_input").value;
+
+
+  var Micrograms_to_pounds_formula = micrograms_entered_by_user *  3;  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("lbsInput").value = Micrograms_to_pounds_formula;  
+
+}
+
+
+function pounds_to_Imperial_tons()
+{
+  
+  var lbs = document.getElementById("lbsInput").value;
+
+
+  var Pounds_to_Imperial_tons_formula = Math.trunc(Math.round(lbs / 2240));  //imperal tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("Imperial_tons_input").value = Pounds_to_micrograms_formula;  
+
+}
+
+
