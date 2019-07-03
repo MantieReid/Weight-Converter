@@ -150,7 +150,7 @@ function pounds_to_ounces()
   var lbs = document.getElementById("lbsInput").value;
 
 
-  var pounds_to_ounces_formula = Math.trunc(Math.round(lbs *16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var pounds_to_ounces_formula = Math.trunc(Math.round(lbs *16));  //pounds to ounces ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("ounces_input").value = pounds_to_ounces_formula;  
 
 }
@@ -161,7 +161,7 @@ function ounces_to_pounds()
   var ounces_user_entered = document.getElementById("ounces_input").value;
 
 
-  var ounces_to_pounds_formula = Math.trunc(Math.round(ounces_user_entered / 16));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var ounces_to_pounds_formula = Math.trunc(Math.round(ounces_user_entered / 16));  //ounces  to pounds formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("lbsInput").value = ounces_to_pounds_formula;  
 
 //test
@@ -175,7 +175,7 @@ function pounds_to_Milligrams()
   var lbs = document.getElementById("lbsInput").value;
 
 
-  var pounds_to_milligrams_formula = Math.trunc(Math.round(lbs *453592.37));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var pounds_to_milligrams_formula = Math.trunc(Math.round(lbs *453592.37));  //Pounds to milligrams formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("milligrams_input").value = pounds_to_milligrams_formula;  
 
 }
@@ -187,7 +187,7 @@ function Milligrams_to_pounds()
   var milligrams_entered_by_user = document.getElementById("milligrams_input").value;
 
 
-  var pounds_to_milligrams_formula = Math.trunc(Math.round(milligrams_entered_by_user /  453592.37));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var pounds_to_milligrams_formula = Math.trunc(Math.round(milligrams_entered_by_user /  453592.37));  //Milligrams to pounds  // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("lbsInput").value = pounds_to_milligrams_formula;  
 
 }
@@ -201,7 +201,7 @@ function pounds_to_Metric_tons()
   var lbs = document.getElementById("lbsInput").value;
 
 
-  var Pounds_to_Metric_tons_formula = Math.trunc(Math.round(lbs / 2204.623));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var Pounds_to_Metric_tons_formula = Math.trunc(Math.round(lbs / 2204.623));  //pounds to metric tons // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("metric_tons_input").value = Pounds_to_Metric_tons_formula;  
 
 }
@@ -213,7 +213,7 @@ function Metric_tons_to_pounds()
   var Metric_tons_entered_by_user = document.getElementById("metric_tons_input").value;
 
 
-  var Metric_tons_to_pounds_formula = Math.trunc(Math.round(Metric_tons_entered_by_user * 2204.623));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var Metric_tons_to_pounds_formula = Math.trunc(Math.round(Metric_tons_entered_by_user * 2204.623));  //metric tons to pounds  formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("lbsInput").value =  Metric_tons_to_pounds_formula;  
 
 }
@@ -225,7 +225,7 @@ function pounds_to_Micrograms()
   var lbs = document.getElementById("lbsInput").value;
 
 
-  var Pounds_to_micrograms_formula = Math.trunc(Math.round(lbs *  4.536e+8));  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var Pounds_to_micrograms_formula = Math.trunc(Math.round(lbs *  4.536e+8));  //Pounds to micrograms formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("micrograms_input").value = Pounds_to_micrograms_formula;  
 
 }
@@ -236,7 +236,7 @@ function Micrograms_to_pounds()
   var micrograms_entered_by_user = document.getElementById("micrograms_input").value;
 
 
-  var Micrograms_to_pounds_formula = micrograms_entered_by_user *  3;  //ounces formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  var Micrograms_to_pounds_formula = micrograms_entered_by_user *  3;  //Micrograms to pounds formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
   document.getElementById("lbsInput").value = Micrograms_to_pounds_formula;  
 
 }
@@ -248,8 +248,20 @@ function pounds_to_Imperial_tons()
   var lbs = document.getElementById("lbsInput").value;
 
 
-  var Pounds_to_Imperial_tons_formula = Math.trunc(Math.round(lbs / 2240));  //imperal tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
-  document.getElementById("Imperial_tons_input").value = Pounds_to_micrograms_formula;  
+  var Pounds_to_Imperial_tons_formula = Math.trunc(Math.round(lbs / 2240));  //pounds to imperial tons formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("Imperial_tons_input").value = Pounds_to_Imperial_tons_formula;  
+
+}
+
+
+function Imperial_tons_to_pounds()
+{
+  
+  var Imperial_tons_entered_by_user = document.getElementById("Imperial_tons_input").value;
+
+
+  var Pounds_to_Imperial_tons_formula = Math.trunc(Math.round(lbs / 2240));  //imperial tons  to pounds formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("lbsInput").value = Pounds_to_Imperial_tons_formula;  
 
 }
 
