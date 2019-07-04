@@ -25,7 +25,7 @@
           
           <!--- The functions listed in oninput. It tells the web application to convert pounds to the other measurements as soon as the user enters numbers in the input box --->
           <!--- Onchange ensures the values of the other measurements change when a value is changed in the input box for pounds.-->
-          <input id="lbsInput"   oninput="convert_to_grams();pounds_to_kilograms(); pounds_to_ounces(); pounds_to_Milligrams();  pounds_to_Metric_tons(); pounds_to_Micrograms();"  onchange="convert_to_grams();pounds_to_kilograms(); pounds_to_ounces(); pounds_to_Milligrams();  pounds_to_Metric_tons(); pounds_to_Micrograms();"   type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">   <!--- input for the form. Large form.  --->
+          <input id="lbsInput"   oninput="convert_to_grams();pounds_to_kilograms(); pounds_to_Imperial_tons(); pounds_to_ounces(); pounds_to_Milligrams();  pounds_to_Metric_tons(); pounds_to_Micrograms();"  onchange="convert_to_grams();pounds_to_kilograms(); pounds_to_ounces(); pounds_to_Milligrams();  pounds_to_Metric_tons(); pounds_to_Micrograms();"   type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">   <!--- input for the form. Large form.  --->
         </div>
 
       </form>
@@ -129,7 +129,7 @@
           <div class="card-block">
             <h4>Imperial Ton:</h4>
 
-            <P>  <input  id="Imperial_tons_input"  oninput="   convert_to_grams();  pounds_to_Imperial_tons(); pounds_to_kilograms(); pounds_to_Metric_tons();  pounds_to_ounces();   Micrograms_to_pounds(); pounds_to_Milligrams(); "  type="number" class="form-control form-control-sm" placeholder="Enter Imperial Tons..."> </P>
+            <P>  <input  id="Imperial_tons_input"  oninput="   convert_to_grams();   pounds_to_kilograms(); pounds_to_Metric_tons();  pounds_to_ounces();   Micrograms_to_pounds(); pounds_to_Milligrams(); Imperial_tons_to_pounds();  "  type="number" class="form-control form-control-sm" placeholder="Enter Imperial Tons..."> </P>
 
             <div id="imperailtonoutput"></div>
           </div>

@@ -260,8 +260,8 @@ function Imperial_tons_to_pounds()
   var Imperial_tons_entered_by_user = document.getElementById("Imperial_tons_input").value;
 
 
-  var Pounds_to_Imperial_tons_formula = Math.trunc(Math.round(lbs / 2240));  //imperial tons  to pounds formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
-  document.getElementById("lbsInput").value = Pounds_to_Imperial_tons_formula;  
+  var Imperial_tons_to_pounds = Math.trunc(Math.round(Imperial_tons_entered_by_user  * 2240));  //imperial tons  to pounds formula // gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("lbsInput").value =  Imperial_tons_to_pounds;  
 
 }
 
