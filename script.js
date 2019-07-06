@@ -266,3 +266,9 @@ function Imperial_tons_to_pounds()
 }
 
 
+function allofthem()
+{
+
+  convert_to_grams();pounds_to_kilograms(); pounds_to_Imperial_tons(); pounds_to_ounces(); pounds_to_Milligrams();  pounds_to_Metric_tons(); pounds_to_Micrograms();
+
+}
