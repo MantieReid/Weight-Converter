@@ -24,11 +24,12 @@ let lbs = userinput.target.value;  //lbs equals what the user enetered.
 
   var gramsformula = Math.trunc(Math.round( lbs * 453.592));  //grams formula //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
 
-  
- 
- // var kgformula = Math.trunc(Math.round(lbs / 2.205)); //kilogram formula  //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+  document.getElementById("gramsOutput").innerHTML = gramsformula;
 
-  //document.getElementById("kgOutput").innerHTML = kgformula;
+ 
+ var kgformula = Math.trunc(Math.round(lbs / 2.205)); //kilogram formula  //gets rid of the numbers after the decimals, this is done with trunc.  Rounds down the numbers. 
+
+  document.getElementById("kgOutput").innerHTML = kgformula;
  
 
 
